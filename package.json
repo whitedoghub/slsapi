@@ -7,8 +7,8 @@
     "start": "tsc && node ./build/src/app.js",
     "build": "tsc"
   },
-  "repository": "https://github.com/kbk109-dev/slsapi.git",
-  "author": "kbk109-dev <kbk109.dev@gmail.com>",
+  "repository": "https://github.com/whitedoghub/slsapi.git",
+  "author": "whitedoghub <kbk109@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "nodemon": "^2.0.7",
