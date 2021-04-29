@@ -6,6 +6,10 @@ switch(process.env.NODE_ENV) {
         break
     case 'staging':
         dotenv.config({path: './.env.staging'})
+        break
+    case 'prod':
+        dotenv.config({path: './.env.prod'})
+        break
     default:
         dotenv.config()
 } 
