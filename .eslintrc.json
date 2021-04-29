@@ -17,6 +17,8 @@
         "@typescript-eslint"
     ],
     "rules": {
-        "no-unused-vars": "warn"
+        "no-unused-vars": "warn",
+        "no-console": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off"
     }
 }

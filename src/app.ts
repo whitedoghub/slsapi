@@ -9,6 +9,9 @@ const router = new Router()
 router.use('/api', api.routes())
 
 app.use(bodyParser())
+app.use(ctx => {
+    ctx.body = `Request Body : ${JSON.stringify(ctx.request.body)}`
+})
 app.use(router.routes()).use(router.allowedMethods())
 
 app.listen(4000, () => {
