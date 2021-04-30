@@ -16,10 +16,12 @@ switch(process.env.NODE_ENV) {
 
 dotenv.config()
 
+const RUNNING_MODE = process.env.NODE_ENV
+
 const DB_CONFIG = {
     DB_URL: process.env['DB_URL']
 }
 
-export const Contants = {
-    DB_CONFIG
+export const Constants = {
+    DB_CONFIG, RUNNING_MODE
 }

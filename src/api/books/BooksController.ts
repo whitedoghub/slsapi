@@ -1,5 +1,5 @@
 import Koa from 'koa'
-import {Contants} from '../../config/Contants'
+import {Constants} from '../../config/Constants'
 
 export const getBooksInfo = (ctx: Koa.Context) => {
     ctx.status = 200
@@ -15,7 +15,7 @@ export const getBooks = (ctx: Koa.Context) => {
 
 export const getDBURL = (ctx: Koa.Context) => {
     ctx.status = 200
-    ctx.body = `DB URL = ${Contants.DB_CONFIG.DB_URL}`
+    ctx.body = `DB URL = ${Constants.DB_CONFIG.DB_URL}`
 }
 
 export const postInfo = (ctx: Koa.Context) => {
