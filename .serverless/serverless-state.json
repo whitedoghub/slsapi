@@ -12,7 +12,8 @@
       "lambdaHashingVersion": "20201221",
       "environment": {
         "RUNNING_MODE": "dev",
-        "DB_URL": "kbk109_db_dev"
+        "DB_URL": "kbk109_db_dev",
+        "POOMGO_API_KEY": "kSjZL8VXSKfWpXFfV1Nk"
       },
       "deploymentBucket": "slsapi-bucket-dev",
       "variableSyntax": "\\${([^{}:]+?(?:\\(|:)(?:[^:{}][^{}]*?)?)}",
@@ -112,7 +113,7 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "slsapi-bucket-dev",
-                "S3Key": "serverless/slsapi/dev/1620344339350-2021-05-06T23:38:59.350Z/slsapi.zip"
+                "S3Key": "serverless/slsapi/dev/1620350987851-2021-05-07T01:29:47.851Z/slsapi.zip"
               },
               "Handler": "src/app.appHandler",
               "Runtime": "nodejs12.x",
@@ -122,7 +123,8 @@
               "Environment": {
                 "Variables": {
                   "RUNNING_MODE": "dev",
-                  "DB_URL": "kbk109_db_dev"
+                  "DB_URL": "kbk109_db_dev",
+                  "POOMGO_API_KEY": "kSjZL8VXSKfWpXFfV1Nk"
                 }
               },
               "Role": {
@@ -136,14 +138,14 @@
               "AppLogGroup"
             ]
           },
-          "AppLambdaVersionTxdZHRmn4hmpNR8o8MM0RZqIVubMy5jTZaz6PyfLvk": {
+          "AppLambdaVersionc1GpqvQ5bYTF4JN6Y4qIPmqL9cDx5YiZ6iLTUXF1dg": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "AppLambdaFunction"
               },
-              "CodeSha256": "P4po5kD0KAkkYAtj0b1UB/VFwNxq62YR4X3Y9Tz3YbM="
+              "CodeSha256": "OrWkiISs7kqqzbRycEWpTV8LtTcSyjStsh1LWni5Wrk="
             }
           },
           "ApiGatewayRestApi": {
@@ -273,7 +275,7 @@
               "MethodResponses": []
             }
           },
-          "ApiGatewayDeployment1620344327140": {
+          "ApiGatewayDeployment1620350977079": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -331,7 +333,7 @@
           "AppLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "AppLambdaVersionTxdZHRmn4hmpNR8o8MM0RZqIVubMy5jTZaz6PyfLvk"
+              "Ref": "AppLambdaVersionc1GpqvQ5bYTF4JN6Y4qIPmqL9cDx5YiZ6iLTUXF1dg"
             }
           },
           "ServiceEndpoint": {
@@ -402,7 +404,7 @@
         "memory": 384,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "AppLambdaVersionTxdZHRmn4hmpNR8o8MM0RZqIVubMy5jTZaz6PyfLvk"
+        "versionLogicalId": "AppLambdaVersionc1GpqvQ5bYTF4JN6Y4qIPmqL9cDx5YiZ6iLTUXF1dg"
       }
     },
     "configValidationMode": "warn",
@@ -427,7 +429,7 @@
     "artifact": "/Users/brody/Desktop/dev/server/slsapi/.build/.serverless/slsapi.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/slsapi/dev/1620344339350-2021-05-06T23:38:59.350Z",
+    "artifactDirectoryName": "serverless/slsapi/dev/1620350987851-2021-05-07T01:29:47.851Z",
     "artifact": "slsapi.zip"
   }
 }
