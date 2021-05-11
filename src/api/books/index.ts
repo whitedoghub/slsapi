@@ -1,6 +1,6 @@
 import Koa from 'koa'
 import Router from 'koa-router'
-import {getBooksInfo, getBooks, getDBURL, postInfo, testAPIPoomGo} from './BooksController'
+import {getBooksInfo, getBooks, getDBURL, postUser, testAPIPoomGo} from './BooksController'
 
 export const books = new Router()
 
@@ -12,4 +12,4 @@ books.get('/dburl', getDBURL)
 
 books.get('/testapi', testAPIPoomGo)
 
-books.post('/postInfo', postInfo)
+books.post('/postUser', postUser)

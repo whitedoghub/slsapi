@@ -7,7 +7,7 @@ import dotenv from 'dotenv'
 
 import serverless from 'serverless-http'
 import {api} from './api'
-
+import { sequelize } from './model'
 
 const app = new Koa()
 const router = new Router()
@@ -43,6 +43,8 @@ app.use(bodyParser()).use(router.routes()).use(router.allowedMethods())
 if(process.env.NODE_ENV === 'local') {
     app.listen(4000, () => {
         console.log('listening')
+        const db = async () => await sequelize.authenticate()
+        console.log(db)
     })
 }
 

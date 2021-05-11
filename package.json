@@ -34,11 +34,16 @@
   },
   "dependencies": {
     "@koa/cors": "^3.1.0",
+    "@types/sequelize": "^4.28.9",
     "dotenv": "^8.6.0",
     "koa": "^2.13.1",
     "koa-bodyparser": "^4.3.0",
     "koa-router": "^10.0.0",
+    "mysql2": "^2.2.5",
+    "reflect-metadata": "^0.1.13",
     "request": "^2.88.2",
+    "sequelize": "^6.6.2",
+    "sequelize-typescript": "^2.1.0",
     "serverless-http": "^2.7.0"
   }
 }
